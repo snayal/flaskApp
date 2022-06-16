@@ -1,6 +1,6 @@
 server {
 listen 80;
-server_name 20.232.107.138;
+server_name your_server_ip;
 
 location /static{
 alias /home/azureuser/flaskApp/static/;
