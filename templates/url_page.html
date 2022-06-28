@@ -1,17 +1,20 @@
 {% extends "base.html" %}
-{% block title %}Short URL{% endblock %}
 
+{% block title %} Home URL Page {% endblock %}
 {% block content %}
 
-<form action="#", method="post">
-    <label for="url">Enter an https://URL: </label>
-    <hr>
+<form style="text-align: center; action="#", method="post">
+    <label style="font-size: 30px; color: black;" for="url">Enter an https:// URL:  </label>
+
     <input type="url" name="nm" id="url"
-       placeholder="https://google.com"
+       placeholder="https://xyz.com"
        pattern="https://.*" size="100"
        required>
-    <br>
+    <br><br>
     <input type="submit" value="submit" class="btn btn-secondary">
+    <hr>
 </form>
 
+
+<img src="https://www.w3schools.com/jsref/img_flwr.gif">
 {% endblock %}

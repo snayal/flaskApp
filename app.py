@@ -64,7 +64,7 @@ def redirection(short_url):
     if long_url:
         return redirect(long_url.long)
     else:
-        return '<h1>Url doesnt exist</h1>'
+        return '<br><br><h1 style="color:red; background-color: Yellow; text-align:center" >This URL does not exist.</h1>'
 
 
 @app.route('/display/<url>')
