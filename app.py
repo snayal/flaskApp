@@ -20,7 +20,7 @@ class Urls(db.Model):
     long = db.Column("long", db.String(100))
     short = db.Column("short", db.String(15))
 
-def __init__(self, long, short):
+    def __init__(self, long, short):
         self.long = long
         self.short = short
 
