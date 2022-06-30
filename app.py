@@ -18,7 +18,7 @@ def create_tables():
 class Urls(db.Model):
     id_ = db.Column("id_", db.Integer, primary_key=True)
     long = db.Column("long", db.String(100))
-    short = db.Column("short", db.String(15))
+    short = db.Column("short", db.String(5))
 
     def __init__(self, long, short):
         self.long = long
